@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
   get 'pictures' => 'pictures#index'
-end
+  get 'pictures/:id' => 'pictures#show'
+  end
+
 Rails.application
