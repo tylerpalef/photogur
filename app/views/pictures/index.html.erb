@@ -1,2 +1,12 @@
-<h1>So baby, come light me up</h1>
-<h2>and baby I'll let you on it</h2>
+<h1>Pictures</h1>
+
+<% @pictures.each do |picture| %>
+  <p><%= picture.title %>, <%= picture.artist %></p>
+  <img src="<%= picture.url %>" alt="<%= picture.title %>">
+<% end %>
+
+<br>
+
+<h3>Ariana says</h3>
+<p>So baby, come light me up</p>
+<p>and baby I'll let you on it</p>
