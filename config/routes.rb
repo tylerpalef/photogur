@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+
+  get 'sessions/create'
+
+  get 'sessions/destroy'
+
 # This is to get localhost:3000 to redirect to the index page
   root 'pictures#index'
 
