@@ -18,4 +18,6 @@ Rails.application.routes.draw do
 # Deleting pictures
   delete 'pictures/:id' => 'pictures#destroy'
 
+  resource :user
+
 end
